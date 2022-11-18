@@ -7,3 +7,7 @@
 html {
     font-family: "Rubik Distressed";
 }
+
+*{
+    box-sizing: border-box;
+}

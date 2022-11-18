@@ -25,7 +25,21 @@ export default defineNuxtConfig({
     ],
     css: [
       "/layouts/global.css",
-    ]
+    ],
+    app: {
+      head: {
+          title: "One Piece",
+          meta: [
+              {name: "description", content: "Everything about One Piece"}
+          ],
+          link: [
+              {
+                  rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons"
+              }
+          ]
+      }
+  }
+    
     
 
 })

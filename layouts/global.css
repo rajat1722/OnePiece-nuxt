@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Rubik Distressed";
+    src: local("Rubik Distressed"),
+        url("/assets/RubikDistressed-Regular.ttf") format("truetype");
+}
+
+html {
+    font-family: "Rubik Distressed";
+}

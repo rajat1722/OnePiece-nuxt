@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto flex items-center gap-9">
+    <div class="container mx-auto p-4 flex items-center gap-9">
         <div class="justify-center">
             <h1 class="text-4xl my-5">Save a note </h1>
             <form @submit.prevent="saveNote()">
@@ -17,11 +17,15 @@
 <script setup lang="ts">
     import {useNoteStore} from "@/stores/NoteStore"
 
+
+    
     const noteStore = useNoteStore()
     const subject = ref<string>("")
     const content = ref<string>("")
 
-    
+   
+
+
     function saveNote(){
         // console.log(subject.value, content.value)
         noteStore.addNote(subject.value, content.value)
